@@ -1,0 +1,132 @@
+/* =========================
+   Ranking Page CSS
+========================= */
+
+.rank-hero{
+  position: relative;
+  height: 430px;
+  overflow: hidden;
+  background: #d9d9d9;
+}
+
+.rank-hero__bg{
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(
+      180deg,
+      rgba(245,245,245,0.50),
+      rgba(235,228,220,0.65)
+    ),
+    url("../images/rank-hero.jpg") center/cover no-repeat;
+}
+
+
+.rank-hero__inner{
+  position: relative;
+  height: 100%;
+  display: flex;
+  align-items: flex-start;
+  padding-top: 66px;
+}
+
+.rank-hero__copy{
+  max-width: 560px;
+}
+
+.rank-hero__title{
+  margin: 0;
+  font-size: 34px;
+  font-weight: 900;
+  letter-spacing: 0.08em;
+  color: #6b615c;
+}
+
+.rank-hero__desc{
+  margin: 16px 0 0;
+  font-size: 13px;
+  line-height: 1.9;
+  color: #8a5a57;
+  font-weight: 600;
+}
+
+/* main area */
+.rank-section{
+  background: #f3f2f1;
+  padding: 44px 0 56px;
+}
+
+.rank-title{
+  margin: 0 0 30px;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 900;
+  letter-spacing: 0.08em;
+  color: #6b615c;
+}
+
+/* grid */
+.rank-grid{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 38px 34px;
+  align-items: start;
+}
+
+.rank-item{
+  display: block;
+  text-align: center;
+  color: #6b615c;
+  text-decoration: none;
+}
+
+.rank-no{
+  font-weight: 800;
+  margin-bottom: 12px;
+}
+
+.rank-thumb{
+  width: 140px;
+  height: 140px;
+  margin: 0 auto 10px;
+  border-radius: 50%;
+  overflow: hidden;
+  background: rgba(255,255,255,0.65);
+  border: 1px solid rgba(0,0,0,0.06);
+  transition: transform .15s ease, border-color .15s ease;
+}
+
+.rank-thumb:hover{
+  transform: translateY(-1px);
+  border-color: rgba(0,0,0,0.12);
+}
+
+.rank-thumb img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.rank-name{
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 1.4;
+}
+
+/* button */
+.btn--wide{
+  padding: 14px 64px;
+}
+
+/* responsive */
+@media (max-width: 980px){
+  .rank-grid{ grid-template-columns: repeat(3, 1fr); }
+}
+@media (max-width: 720px){
+  .rank-hero{ height: 330px; }
+  .rank-grid{ grid-template-columns: repeat(2, 1fr); }
+  .rank-thumb{ width: 130px; height: 130px; }
+}
+@media (max-width: 420px){
+  .rank-grid{ grid-template-columns: 1fr; }
+}

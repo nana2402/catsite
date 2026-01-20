@@ -1,0 +1,213 @@
+/* =========================
+   Base CSS（全ページ共通）
+========================= */
+
+/* --- reset --- */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+/* --- body & font --- */
+body {
+    font-family: "Hiragino Kaku Gothic ProN", "Yu Gothic", sans-serif;
+    color: #6b615c;
+    background: #ffffff;
+    line-height: 1.7;
+}
+
+/* --- link --- */
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* --- layout --- */
+.container {
+    width: min(1100px, 92%);
+    margin: 0 auto;
+}
+
+/* =========================
+   Header
+========================= */
+.site-header {
+    background: #ffffff;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+
+
+    backdrop-filter: blur(6px);
+}
+
+.header-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 14px 0;
+}
+
+.logo {
+    font-weight: 900;
+    letter-spacing: 0.08em;
+}
+
+/* --- nav --- */
+.nav {
+    display: flex;
+    gap: 26px;
+}
+
+.nav a {
+    font-size: 14px;
+    padding: 6px 10px;
+    border-radius: 999px;
+    transition: background 0.2s ease;
+}
+
+.nav a:hover {
+    background: rgba(0, 0, 0, 0.06);
+}
+
+/* 今いるページ */
+.nav .is-current {
+    background: rgba(0, 0, 0, 0.08);
+}
+
+
+/* ===== ハンバーガー共通 ===== */
+.hamburger{
+  display:none;               /* PCは隠す */
+  width:44px;
+  height:44px;
+  border:0;
+  background:transparent;
+  border-radius:12px;
+  cursor:pointer;
+  position:relative;
+}
+
+.hamburger span{
+  position:absolute;
+  left:10px;
+  right:10px;
+  height:2px;
+  background:#6b5a55;         /* 文字色に合わせて */
+  border-radius:999px;
+  transition:transform .25s, opacity .25s, top .25s;
+}
+
+.hamburger span:nth-child(1){ top:14px; }
+.hamburger span:nth-child(2){ top:21px; }
+.hamburger span:nth-child(3){ top:28px; }
+
+/* 開いた状態（×になる） */
+.hamburger.is-open span:nth-child(1){ top:21px; transform:rotate(45deg); }
+.hamburger.is-open span:nth-child(2){ opacity:0; }
+.hamburger.is-open span:nth-child(3){ top:21px; transform:rotate(-45deg); }
+
+/* ===== スマホだけ切り替え ===== */
+@media (max-width: 768px){
+  .hamburger{ display:inline-block; }
+
+  /* スマホではいったんナビを隠す */
+  .nav{
+    display:none;
+    position:absolute;
+    top:100%;
+    right:16px;
+    background:#fff;
+    border:1px solid rgba(0,0,0,.08);
+    border-radius:16px;
+    box-shadow:0 10px 30px rgba(0,0,0,.12);
+    padding:10px;
+    min-width:180px;
+    z-index:1000;
+  }
+
+  .nav a{
+    display:block;
+    padding:10px 12px;
+    border-radius:12px;
+  }
+
+  .nav.is-open{ display:block; }
+
+  /* header-inner を基準に nav を絶対配置 */
+  .header-inner{ position:relative; }
+}
+
+
+/* =========================
+   Button
+========================= */
+.btn {
+    display: inline-block;
+    padding: 12px 36px;
+    background: #ffffff;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    border-radius: 999px;
+    font-weight: 700;
+    color: #6b615c;
+    transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.btn:hover {
+    background: #f5f5f5;
+    transform: translateY(-1px);
+}
+
+.btn-wrap {
+    text-align: center;
+    margin-top: 40px;
+}
+
+/* =========================
+   Footer
+========================= */
+.site-footer {
+    background: #7b4a4a;
+    color: #ffffff;
+    margin-top: 0px;
+}
+
+.footer-inner {
+    padding: 28px 0;
+    text-align: center;
+}
+
+.footer-nav {
+    font-size: 13px;
+    margin-bottom: 8px;
+}
+
+.footer-nav a {
+    color: #ffffff;
+    margin: 0 4px;
+}
+
+.footer-copy {
+    font-size: 12px;
+    opacity: 0.85;
+}
+
+/* =========================
+   Utility
+========================= */
+.text-center {
+    text-align: center;
+}

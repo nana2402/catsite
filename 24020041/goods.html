@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>猫グッズ｜にゃんこ図鑑</title>
+
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/goods.css">
+  <script src="js/index.js" defer></script>
+
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="index.html">にゃんこ図鑑🐾</a>
+
+      <nav class="nav" id="siteNav">
+        <a href="ranking.html">ランキング</a>
+        <a href="search.html">猫検索</a>
+        <a href="goods.html" class="is-current">猫グッズ</a>
+        <a href="contact.html">お問い合わせ</a>
+      </nav>
+      
+      <button class="hamburger" type="button" aria-label="メニュー" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+    </div>
+
+  </header>
+
+  <main class="goods-page">
+
+    <!-- hero -->
+    <section class="goods-hero">
+      <div class="goods-hero__bg" aria-hidden="true"></div>
+      <div class="container goods-hero__inner">
+        <h1 class="goods-hero__title">猫グッズ紹介🐾</h1>
+        <p class="goods-hero__desc">毎日の暮らしがちょっと楽しくなる、猫のための便利アイテム。</p>
+      </div>
+    </section>
+
+    <!-- content -->
+    <section class="goods-section">
+      <div class="container">
+
+        <h2 class="goods-title">🐾猫グッズ紹介🐾</h2>
+
+        <!-- カテゴリ（見た目だけでOK） -->
+        <div class="goods-tags">
+          <a class="tag" href="#food">ごはん</a>
+          <a class="tag" href="#toy">おもちゃ</a>
+          <a class="tag" href="#toilet">トイレ</a>
+          <a class="tag" href="#care">ケア</a>
+        </div>
+
+        <!-- グリッド（画像＋短い名前だけでOK） -->
+        <h3 id="food" class="sub-title">ごはん</h3>
+        <div class="goods-grid">
+          <div class="goods-card">
+            <div class="goods-card__img"><img src="images/goods1.jpg" alt="自動給餌器"></div>
+            <p class="goods-card__name">自動給餌器</p>
+          </div>
+
+          <div class="goods-card">
+            <div class="goods-card__img"><img src="images/goods2.jpg" alt="フードボウル"></div>
+            <p class="goods-card__name">フードボウル</p>
+          </div>
+        </div>
+
+        <h3 id="toy" class="sub-title">おもちゃ</h3>
+        <div class="goods-grid">
+          <div class="goods-card">
+            <div class="goods-card__img"><img src="images/goods4.jpg" alt="ボールおもちゃ"></div>
+            <p class="goods-card__name">ボールおもちゃ</p>
+          </div>
+
+          <div class="goods-card">
+            <div class="goods-card__img"><img src="images/goods5.jpg" alt="羽つきトイ"></div>
+            <p class="goods-card__name">羽つきトイ</p>
+          </div>
+        </div>
+
+        <h3 id="toilet" class="sub-title">トイレ</h3>
+        <div class="goods-grid">
+          <div class="goods-card">
+            <div class="goods-card__img"><img src="images/goods3.jpg" alt="猫トイレ"></div>
+            <p class="goods-card__name">猫トイレ</p>
+          </div>
+        </div>
+
+        <h3 id="care" class="sub-title">ケア</h3>
+        <div class="goods-grid">
+          <div class="goods-card">
+            <div class="goods-card__img"><img src="images/goods6.jpg" alt="爪研ぎ"></div>
+            <p class="goods-card__name">爪研ぎ</p>
+          </div>
+        </div>
+        
+
+        <div class="btn-wrap">
+          <a class="btn btn--wide" href="index.html">戻る</a>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-nav">
+        <a href="index.html">top</a> /
+        <a href="ranking.html">ランキング</a> /
+        <a href="search.html">猫検索</a> /
+        <a href="goods.html">猫グッズ</a> /
+        <a href="contact.html">お問い合わせ</a>
+      </div>
+      <div class="footer-copy">© 2026 にゃんこ図鑑　24020041</div>
+    </div>
+  </footer>
+
+</body>
+</html>

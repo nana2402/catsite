@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>猫検索｜にゃんこ図鑑</title>
+
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/search.css">
+  <script src="js/index.js" defer></script>
+
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="index.html">にゃんこ図鑑🐾</a>
+
+      <nav class="nav" id="siteNav">
+        <a href="ranking.html">ランキング</a>
+        <a href="search.html" class="is-current">猫検索</a>
+        <a href="goods.html">猫グッズ</a>
+        <a href="contact.html">お問い合わせ</a>
+      </nav>
+      
+      <button class="hamburger" type="button" aria-label="メニュー" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+    </div>
+
+  </header>
+
+  <main class="search-page">
+
+    <!-- hero -->
+    <section class="search-hero">
+      <div class="search-hero__bg" aria-hidden="true"></div>
+      <div class="container search-hero__inner">
+        <h1 class="search-hero__title">猫検索🐾</h1>
+        <p class="search-hero__desc">気になるタイプから、猫を探してみよう。</p>
+      </div>
+    </section>
+
+    <!-- filters -->
+    <section class="search-section">
+      <div class="container">
+
+        <h2 class="search-title">🐾 どれで探す？ 🐾</h2>
+
+        <div class="search-box">
+          <div class="chip-row">
+            <a class="chip" href="#short">短毛種</a>
+            <a class="chip" href="#long">長毛種</a>
+            <a class="chip" href="#mix">ミックス</a>
+          </div>
+
+          <p class="search-note">※このページは「カテゴリ別一覧」です（課題用にシンプル仕様）</p>
+        </div>
+
+        <!-- short -->
+        <h3 id="short" class="sub-title">短毛種</h3>
+        <div class="card-grid">
+          <a class="cat-card" href="cats/british-shorthair.html">
+            <div class="cat-card__img"><img src="images/rank6.jpg" alt="ブリティッシュショートヘア"></div>
+            <div class="cat-card__name">ブリティッシュショートヘア</div>
+          </a>
+
+          <a class="cat-card" href="cats/american-shorthair.html">
+            <div class="cat-card__img"><img src="images/rank11.jpg" alt="アメリカンショートヘア"></div>
+            <div class="cat-card__name">アメリカンショートヘア</div>
+          </a>
+
+          <a class="cat-card" href="cats/bengal.html">
+            <div class="cat-card__img"><img src="images/rank10.jpg" alt="ベンガル"></div>
+            <div class="cat-card__name">ベンガル</div>
+          </a>
+
+          <a class="cat-card" href="cats/exotic-shorthair.html">
+            <div class="cat-card__img"><img src="images/rank9.jpg" alt="エキゾチックショートヘア"></div>
+            <div class="cat-card__name">エキゾチックショートヘア</div>
+          </a>
+        </div>
+
+        <!-- long -->
+        <h3 id="long" class="sub-title">長毛種</h3>
+        <div class="card-grid">
+          <a class="cat-card" href="cats/ragdoll.html">
+            <div class="cat-card__img"><img src="images/rank3.jpg" alt="ラグドール"></div>
+            <div class="cat-card__name">ラグドール</div>
+          </a>
+
+          <a class="cat-card" href="cats/maine-coon.html">
+            <div class="cat-card__img"><img src="images/rank7.jpg" alt="メインクーン"></div>
+            <div class="cat-card__name">メインクーン</div>
+          </a>
+
+          <a class="cat-card" href="cats/norwegian-forest-cat.html">
+            <div class="cat-card__img"><img src="images/rank8.jpg" alt="ノルウェージャンフォレストキャット"></div>
+            <div class="cat-card__name">ノルウェージャンフォレストキャット</div>
+          </a>
+
+          <a class="cat-card" href="cats/persian.html">
+            <div class="cat-card__img"><img src="images/rank12.jpg" alt="ペルシャ"></div>
+            <div class="cat-card__name">ペルシャ</div>
+          </a>
+        </div>
+
+        <!-- mix -->
+        <h3 id="mix" class="sub-title">ミックス / そのほか</h3>
+        <div class="card-grid">
+          <a class="cat-card" href="cats/minuet.html">
+            <div class="cat-card__img"><img src="images/rank1.jpg" alt="ミヌエット"></div>
+            <div class="cat-card__name">ミヌエット</div>
+          </a>
+
+          <a class="cat-card" href="cats/scottish-fold.html">
+            <div class="cat-card__img"><img src="images/rank2.jpg" alt="スコティッシュフォールド"></div>
+            <div class="cat-card__name">スコティッシュフォールド</div>
+          </a>
+
+          <a class="cat-card" href="cats/munchkin.html">
+            <div class="cat-card__img"><img src="images/rank4.jpg" alt="マンチカン"></div>
+            <div class="cat-card__name">マンチカン</div>
+          </a>
+
+          <a class="cat-card" href="cats/siberian.html">
+            <div class="cat-card__img"><img src="images/rank5.jpg" alt="サイベリアン"></div>
+            <div class="cat-card__name">サイベリアン</div>
+          </a>
+        </div>
+
+        <div class="btn-wrap">
+          <a class="btn btn--wide" href="index.html">戻る</a>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-nav">
+        <a href="index.html">top</a> /
+        <a href="ranking.html">ランキング</a> /
+        <a href="search.html">猫検索</a> /
+        <a href="goods.html">猫グッズ</a> /
+        <a href="contact.html">お問い合わせ</a>
+      </div>
+      <div class="footer-copy">© 2026 にゃんこ図鑑　24020041</div>
+    </div>
+  </footer>
+
+</body>
+</html>
